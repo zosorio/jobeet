@@ -1,0 +1,35 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=127.0.0.1;dbname=jobeet'
+      username: root
+      password: ""
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=127.0.0.1;dbname=jobeet_test'
+      username: root
+      password: ""
+
+
+#dev:
+#  doctrine:
+#    class: sfDoctrineDatabase
+#
+#test:
+#  doctrine:
+#    class: sfDoctrineDatabase
+#    param:
+#      dsn: 'mysql:host=localhost;dbname=jobeet_test'
+#      username: root
+#      password: root
+#
+#all:
+#  doctrine:
+#    class: sfDoctrineDatabase
+#    param:
+#      dsn: 'mysql:host=localhost;dbname=jobeet'
+#      username: root
+#      password: root
